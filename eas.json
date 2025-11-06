@@ -1,0 +1,39 @@
+{
+  "cli": {
+    "version": ">= 14.4.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://staging.apis.smoov.app/api",
+        "EXPO_PUBLIC_API_DOMAIN": "staging.apis.smoov.app"
+      },
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://staging.apis.smoov.app/api",
+        "EXPO_PUBLIC_API_DOMAIN": "staging.apis.smoov.app"
+      },
+      "channel": "preview"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://production.apis.smoov.app/api",
+        "EXPO_PUBLIC_API_DOMAIN": "production.apis.smoov.app"
+      },
+      "ios": {
+        "image": "latest"
+      },
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

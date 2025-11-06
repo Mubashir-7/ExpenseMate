@@ -1,0 +1,90 @@
+{
+  "expo": {
+    "name": "Smoov",
+    "slug": "smoov",
+    "orientation": "portrait",
+    "version": "1.4.2",
+    "icon": "./assets/images/app-icon.png",
+    "scheme": "smoovapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "web": {
+      "bundler": "metro"
+    },
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#EA40A3"
+    },
+    "ios": {
+      "deploymentTarget": "14.0",
+      "preview": {
+        "enabled": true
+      },
+      "production": {
+        "enabled": false
+      },
+      "supportsTablet": false,
+      "bundleIdentifier": "app.smoov.SmoovApp",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["smoovapp"]
+          }
+        ],
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "associatedDomains": ["applinks:smoovapp.com"],
+      "runtimeVersion": "1.0.0",
+      "version": "1.0.0"
+    },
+    "appleTeamId": "9T9UPB9Z2W",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": ["android.permission.INTERNET"],
+      "package": "com.smoov.SmoovApp"
+    },
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "349128820955036",
+          "displayName": "Smoov's Pixel",
+          "clientToken": "213fe69d385fbe5be0728a528a5d75b5",
+          "scheme": "fb349128820955036",
+          "isAutoInitEnabled": true
+        }
+      ],
+      ["expo-notifications"],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ],
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
